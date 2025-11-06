@@ -54,5 +54,5 @@ jobs:
           LOG_LEVEL:              ${{ vars.LOG_LEVEL || 'INFO' }}
         run: |
           echo "🚀 Launching Notion → RDS ETL..."
-          python etl_notion_to_rds.py
+          python etl.py
           echo "✅ ETL completed"
